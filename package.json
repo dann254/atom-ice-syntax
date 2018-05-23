@@ -1,0 +1,12 @@
+{
+  "name": "atom-ice-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "Cool dark syntax theme for Atom editor",
+  "keywords": ["syntax", "theme", "dark", "ice"],
+  "repository": "https://github.com/dann254/atom-ice-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
