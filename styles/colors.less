@@ -1,28 +1,30 @@
 // These colors are specific to the theme. Do not use in a package!
 
-@very-light-gray: #c5c8c6;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282a2e;
-@very-dark-gray: #1d1f21;
+// Config -----------------------------------
+@syntax-hue: 180;
+@syntax-saturation: 100%;
+@syntax-brightness: 3%;
 
-@cyan: #8abeb7;
-@blue: #81a2be;
-@purple: #b294bb;
-@green: #b5bd68;
-@red: #cc6666;
-@orange: #de935f;
-@light-orange: #f0c674;
+// Monochrome -----------------------------------
+@mono-1: hsl(@syntax-hue, 14%, 71%); // default text
+@mono-2: hsl(@syntax-hue, 9%, 55%);
+@mono-3: hsl(@syntax-hue, 10%, 40%);
 
-@black: #000000;
-@dark-blue: darken(cyan, 45%); // #001315
+// Colors -----------------------------------
+@hue-1: hsl(180, 100%, 50%); // <-cyan
+@hue-2: hsl(207, 77%, 56%); // <-blue
+@hue-3: hsl(286, 60%, 57%); // <-purple
+@hue-4: hsl(150.8, 100%, 45.1%); // <-green
 
-//bricks
-@base-brick-color: rgba(0, 255, 255, 1);
-@pri-brick-color: darken(@base-brick-color, 10%);
-@sec-brick-color: darken(@base-brick-color, 10%);
+@hue-5: hsl(355, 65%, 55%); // <-red 1
+@hue-5-2: hsl(5, 48%, 51%); // <-red 2
 
-//honey-comb
-@base-honey-color: rgba(0, 0, 0, 1);
-@pri-honey-color: rgba(0, 255, 255, 1);
-@dark-honey-color: rgba(240, 166, 17, 0);
+@hue-6: hsl(14.4, 100%, 70%); // <-orange 1
+@hue-6-2: hsl(39, 67%, 69%); // <-orange 2
+
+// Base colors -----------------------------------
+@syntax-fg: @mono-1;
+@syntax-bg: hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide: darken(@hue-1, 40%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66%);
