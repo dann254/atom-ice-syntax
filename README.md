@@ -2,7 +2,7 @@
 
 This is a dark Atom Syntax theme with a cool glow of cyan and a black background.
 
-## ![Image](sample.png?raw=true)
+## ![Image](sampled.png?raw=true)
 
 ## Installation
 
