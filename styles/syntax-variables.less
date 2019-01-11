@@ -2,8 +2,8 @@
 
 // General colors
 @syntax-text-color: @syntax-fg;
-@syntax-cursor-color: @syntax-accent;
-@syntax-selection-color: lighten(@syntax-background-color, 10%);
+@syntax-cursor-color: @cyan;
+@syntax-selection-color: lighten(@syntax-background-color, 15%);
 @syntax-selection-flash-color: @syntax-accent;
 @syntax-background-color: @syntax-bg;
 
@@ -13,8 +13,8 @@
 @syntax-invisible-character-color: @syntax-guide;
 
 // For find and replace markers
-@syntax-result-marker-color: darken(@syntax-accent, 54%);
-@syntax-result-marker-color-selected: @syntax-accent;
+@syntax-result-marker-color: lighten(@syntax-cursor-line, 54%);
+@syntax-result-marker-color-selected: @cool-blue;
 
 // Gutter colors
 @syntax-gutter-text-color: @syntax-gutter;
@@ -26,7 +26,7 @@
 @syntax-color-renamed: hsl(208, 100%, 60%);
 @syntax-color-added: hsl(150.8, 100%, 45.1%);
 @syntax-color-modified: #ff6f00;
-@syntax-color-removed: hsl(0, 70%, 60%);
+@syntax-color-removed: @hue-5;
 
 // For language entity colors
 @syntax-color-variable: @hue-5;
@@ -45,12 +45,12 @@
 // Custom Syntax Variables -----------------------------------
 // Don't use in packages
 
-@syntax-cursor-line: hsla(
-  @syntax-hue,
-  100%,
-  80%,
-  0.1
-); // needs to be semi-transparent to show search results
+// @syntax-cursor-line: hsla(
+//   @syntax-hue,
+//   100%,
+//   80%,
+//   0.1
+// ); // needs to be semi-transparent to show search results
 
 @syntax-gutter-background-cursor-line: @syntax-cursor-line;
 

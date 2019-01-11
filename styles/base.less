@@ -1,11 +1,19 @@
 @import "syntax-variables";
 
+atom-text-editor[mini] {
+  .line.cursor-line {
+    background-color: @syntax-cursor-line;
+  }
+}
+
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
   .line.cursor-line {
     background-color: @syntax-cursor-line;
+    border-bottom: .1px solid  darken(@cursor-line-border, 8%);
+    border-top: .1px solid  darken(@cursor-line-border, 8%);
   }
 
   .invisible {
@@ -18,6 +26,7 @@ atom-text-editor {
 
   .selection .region {
     background-color: @syntax-selection-color;
+    border-radius: 3px;
   }
 
   .bracket-matcher .region {
@@ -63,6 +72,8 @@ atom-text-editor {
       }
       &.cursor-line-no-selection {
         background-color: @syntax-gutter-background-cursor-line;
+        border-bottom: .1px solid @cursor-line-border;
+        border-top: .1px solid @cursor-line-border;
       }
 
       .icon-right {

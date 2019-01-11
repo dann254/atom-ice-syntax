@@ -2,7 +2,7 @@
 
 This is a dark Atom Syntax theme with a cool glow of cyan and a black background.
 
-## ![Image](sampled.png?raw=true)
+## ![Image](sampled1.png?raw=true)
 
 ## Installation
 
@@ -17,6 +17,10 @@ Alternatively you can use the [Atom Package Manager](https://github.com/atom/apm
 
 ```bash
 apm install atom-ice-syntax
+```
+#### If you prefer the old look, install using apm
+```bash
+apm install atom-ice-syntax@0.2.0
 ```
 
 ---
