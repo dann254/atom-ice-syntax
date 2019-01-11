@@ -1,7 +1,7 @@
 {
   "name": "atom-ice-syntax",
   "theme": "syntax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cool dark syntax theme for Atom editor",
   "keywords": [
     "syntax",
